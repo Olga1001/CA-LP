@@ -1,0 +1,265 @@
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1469px)
+    .offer__right 
+        width: 59.4vw
+        margin-top: auto
+    .menu-link
+        font-size: 14px
+    .search
+        margin-right: 20px
+    .logo__img-icon 
+        width: 40px
+    .logo__img
+        width: 120px
+        margin-left: 15px
+@media only screen and (max-width: 1199px)
+    .menu 
+        margin-right: auto
+        margin-left: 20px
+    .logo__img
+        display: none
+    .footer-col
+        width: calc(50% - 15px)
+        margin-bottom: 30px
+        &:nth-child(2n+2)
+            margin-right: 0
+@media only screen and (max-width : 991px)
+    p 
+        font-size: 14px
+        line-height: 18px
+    .header 
+        padding: 10px 0
+    .burger 
+        display: block
+    .menu 
+        position: fixed 
+        top: 0 
+        left: 0 
+        width: 100% 
+        height: 100% 
+        z-index: 8 
+        margin: 0 
+        padding: 60px 15px
+        background: #ffffff
+        opacity: 0 
+        pointer-events: none 
+        transition: all 0.3s ease
+        display: block
+        transform: translateX(-100px)
+        &.active 
+            opacity: 1 
+            pointer-events: auto
+            transform: translateX(0)
+        .btn
+            margin-top: 30px
+    .show-lg
+        display: block
+    .hide-lg
+        display: none
+    .logo__img-icon
+        display: none 
+    .logo__img
+        display: block
+    .search 
+        margin: 0 -10px 0 0
+    .menu-link
+        height: auto
+        padding: 20px 0
+    .header .social
+        position: initial
+        display: flex
+        padding-top: 40px
+        padding-left: 10px
+    .header .social-link
+        border-color: #191514
+        margin-right: 15px
+        &:hover 
+            border-color: #44b64b
+            svg 
+                fill: #44b64b
+    .header .social-link svg
+        fill: #191514
+    .offer
+        min-height: 530px
+        padding: 40px 15px
+        .fs-50 
+            font-size: 41px
+            line-height: 41px
+    .line-green
+        width: 150px
+        margin-right: 15px
+    .line-dotted
+        width: calc(100% - 165px)
+    .about
+        margin-top: -40px
+    .icon-check 
+        width: 40px
+        height: 36px
+    .offer .btn-2 
+        margin-top: 30px
+        min-width: fit-content
+    .fs-18
+        font-size: 16px
+        line-height: 18px
+    .offer__container 
+        justify-content: space-between
+    .about
+        padding-top: 45px
+        padding-bottom: 120px
+    .title
+        font-size: 24px
+        padding-bottom: 20px
+    .about__text 
+        margin: 40px auto 16px
+    .about__img
+        height: 305px
+        width: fit-content
+    .practice-item img 
+        width: 60px 
+        height: 60px
+        margin-bottom: 25px
+    .partner-border 
+        width: 350px
+        height: 479px
+    .partner-img 
+        width: 310px
+        height: 432px
+        margin: 32px 20px
+    .partner-check
+        width: 40px
+        top: 52px
+    .tab
+        margin-right: 10px
+        font-size: 14px
+        min-width: 160px
+        line-height: 30px
+    .review-avatar
+        width: 90px 
+        height: 90px
+        margin-bottom: 10px
+    .slick-slide img
+        width: 80px 
+        height: 80px
+    .review-item p
+        line-height: 18px
+    .review-head
+        padding-bottom: 20px
+        margin-bottom: 22px
+    .review 
+        padding: 50px 0
+        min-height: 580px
+    .questions-container 
+        padding: 5px 35px
+    .answer p
+        line-height: 19px
+    .contact-row 
+        padding-top: 60px
+    .contact .form
+        width: 100%
+    .contact-info
+        padding-left: 0
+        padding-top: 40px
+    .contact
+        padding-bottom: 50px
+@media only screen and (max-width: 767px)
+    .footer-col
+        width: 100% 
+        margin: 20px 0
+    .offer__right 
+        display: none
+    .offer
+        min-height: 420px
+    .offer .fs-50
+        font-size: 36px
+        line-height: 35px
+    .btn-2
+        line-height: 41px
+    .partner-border 
+        width: 290px
+        height: 419px
+        margin: 0 auto
+    .partner-img 
+        width: 260px
+        height: 359px
+    .partner-check
+        width: 40px
+        top: 66px
+    .paginate
+        height: 50px
+        width: 210px
+    .practice
+        padding-bottom: 90px
+    .btn-arrow
+        margin: 0 20px
+    .partner
+        padding: 50px 0
+    .partner .title
+        margin-bottom: 50px
+    .partner-content
+        padding-top: 50px
+    .partner-item .w-100 
+        flex-wrap: wrap
+    .areas
+        width: 50%
+        margin-top: 25px
+    .answer-content
+        padding-left: 15px
+@media only screen and (max-width: 575px)
+    .footer-top
+        padding: 15px 0px 25px
+    .footer__contact 
+        max-width: 250px
+        margin: 0 auto 47px
+        p 
+            font-size: 14px
+            line-height: 18px
+    .footer__contact-row
+        margin-bottom: 15px
+    .footer__contact svg
+        width: 25px
+        height: 25px
+        margin-right: 10px
+    .footer-link, .footer-main
+        font-size: 14px
+    .footer-bottom
+        text-align: center
+        padding: 28px 0
+        display: block
+        .c-white
+            max-width: 250px
+            margin: 0 auto
+    .footer-bottom-menu 
+        display: block
+        margin: 20px auto 0
+    .footer-bottom-link
+        margin: 15px 0 
+        border: none 
+        padding: 0
+    .btn-2
+        font-size: 16px
+        
+    .areas
+        width: 100%
+    .partner-img 
+        width: 255px
+        height: 350px
+        margin: 32px 17.5px
+    .partner-right
+        padding-top: 25px
+    .questions-container
+        padding: 5px 15px
+    .form label
+        margin-bottom: 15px
+    .half-50 
+        width: 100%
+        margin-right: 0
+    .about__img
+        left: calc(50% + 21px)
+    .contact-info svg
+        margin-right: 20px
+    
+    
+    

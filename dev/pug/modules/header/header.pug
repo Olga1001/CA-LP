@@ -1,0 +1,36 @@
+header.header 
+    .container
+        .flex-center-between
+            button.burger(type="button")
+                span.burger-line.burger-top
+                span.burger-line.burger-center
+                span.burger-line.burger-bottom
+            a.logo.align-items-center(href="#")
+                img.logo__img-icon(src="img/logo/icon.svg", alt="logo")
+                img.logo__img(src="img/logo/logo_100x30.svg", alt="logo")
+            ul.menu
+                li.menu-item.active
+                    a.menu-link(href="#") About Us
+                li.menu-item
+                    a.menu-link(href="#") Attorneys  
+                li.menu-item
+                    a.menu-link(href="#") Practice Areas
+                li.menu-item
+                    a.menu-link(href="#") Articles and Reviews
+                li.menu-item
+                    a.menu-link(href="#") Contact Us
+                li.menu-item.show-lg
+                    button.btn.bg-green(type="button") INTAKE FORM
+                li.social
+                    a.social-link(href="#")
+                        +icon("facebook")
+                    a.social-link(href="#")
+                        +icon("twitter")
+                    a.social-link(href="#")
+                        +icon("instagram")
+            .align-items-center 
+                a.search(href="#")
+                    +icon("search")
+                button.btn.bg-green.hide-lg(type="button") INTAKE FORM
+
+       

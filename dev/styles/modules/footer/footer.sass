@@ -1,0 +1,124 @@
+.footer
+    background-color: #2f3579
+    .container 
+        max-width: 1505px
+    &-top
+        display: flex 
+        flex-wrap: wrap
+        padding: 40px 15px 40px
+    &-col
+        width: calc(25% - 17px)
+        margin-right: 22px 
+        &:last-child
+            margin-right: 0
+    &-logo
+        &-icon
+            width: 60px
+            height: 60px
+            margin: 0 auto 26px
+            fill: #ffffff
+            display: block
+        &-img
+            width: 141px
+            height: 42px
+            margin: 0 auto 42px
+            fill: #ffffff
+            display: block
+    &__contact
+        max-width: 320px
+        margin: 0 auto 30px
+        &-row
+            display: flex 
+            align-items: center
+            margin-bottom: 21px
+        svg
+            width: 30px 
+            height: 30px
+            margin-right: 30px
+            display: flex
+            fill: #44b64b
+            flex-shrink: 0
+        &-text
+            font-size: 14px
+            font-weight: 400
+            line-height: 18px
+    &-main 
+        font-weight: 600
+        line-height: 1
+        text-transform: uppercase
+        font-size: 16px
+        width: 100%
+        padding-bottom: 21px
+        margin-bottom: 15px
+        color: #ffffff
+        position: relative
+        &:before 
+            content: ''
+            position: absolute
+            left: 0 
+            bottom: 0
+            width: 50px
+            height: 3px
+            background-color: #44b64b    
+    &-link
+        font-weight: 400
+        line-height: 30px
+        transition: all 0.3s ease
+        color: #ffffff
+    &-bottom
+        border-top: 1px solid rgba(#ffffff, 0.1)
+        display: flex 
+        flex-wrap: wrap
+        justify-content: space-between 
+        align-items: center
+        padding: 20px 15px
+        &-text
+            font-family: Montserrat
+            font-size: 14px
+            font-weight: 400
+            padding: 10px 0
+            a 
+                margin: 0 3px
+        &-menu
+            display: flex 
+            flex-wrap: wrap 
+        &-link
+            font-size: 14px
+            font-weight: 400
+            padding: 0 18px
+            margin: 10px 0
+            display: block
+            line-height: 1
+            transition: all 0.3s ease
+            color: #ffffff
+            border-left: 1px solid #ffffff
+        &-item
+            &:first-child
+                .footer-bottom-link
+                    border: none
+                    padding-left: 0
+            &:last-child
+                .footer-bottom-link
+                    padding-right: 0
+                
+
+    .social 
+        width: 35px
+        height: 35px
+        border: 1px solid #fff
+        background-color: transparent
+        border-radius: 50%
+        display: flex 
+        align-items: center 
+        justify-content: center
+        transition: all 0.3s ease
+        margin: 0 9px
+        position: initial
+        svg
+            fill: #ffffff
+            width: 17px
+            height: 18px
+        &:hover 
+            background-color: #dd2a7b
+            border-color: #dd2a7b
+        
