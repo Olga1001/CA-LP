@@ -1,0 +1,37 @@
+.breadcrumbs 
+    display: inline-block
+    padding: 25px 0
+    font-size: 14px
+    line-height: 1.2
+    font-weight: 400
+    &__item
+        float: left
+        position: relative
+        &:before
+            content: ''
+            position: absolute
+            left: 0 
+            top: 50% 
+            transform: translateY(-50%)
+            border-radius: 50% 
+            width: 2px 
+            height: 2px
+            background: #bfbfbf
+        &:first-child
+            .breadcrumbs__link 
+                padding-left: 0
+                padding-right: 13px
+            &:before 
+                content: none
+    &__link
+        color: #bfbfbf
+        padding: 0 10px 
+        display: inline-block
+        img 
+            width: 14px
+            height: 14px
+    &__text 
+        color: #191514
+        padding: 0 10px 
+        font-size: 14px
+        line-height: 1.2

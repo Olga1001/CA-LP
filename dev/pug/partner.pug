@@ -1,0 +1,129 @@
+extends layout/main
+
+block variables
+	-var title = 'Главная страница'
+	-var social = false
+
+block content
+	.container
+		ul.breadcrumbs
+			li.breadcrumbs__item
+				a.breadcrumbs__link(href="#")
+					img(src="img/blank_house_6306.png", alt="icon")
+			+breadcrumbs-item('Attorneys  '  ,'#')
+			+breadcrumbs-item('Daniel C. Cohen')
+		h2.title Daniel C. Cohen
+		p.fw-medium.text-center.py-20 Founding Partner
+		.partner-main
+			.justify-content-between.w-100
+				.partner-border 
+					img.partner-img(src="img/rectangle_img.png", alt="img")
+					img.partner-check(src="img/tick.svg", alt="tick")
+				.partner-right
+					p 
+						|Daniel C. Cohen is a founding partner of the Firm and is co-chair of the Firm’s consumer finance litigation department. Mr. Cohen also spearheads the firm’s client intake and development programs. Mr. Cohen has served as class-counsel in numerous consumer law 
+						a.c-green(href="#") class-actions 
+						|and in that role has obtained significant monetary and non-monetary relief on behalf of consumers nationwide. Mr. Cohen also litigates cases on behalf of individual consumers and on behalf of the visually impaired, vindicating their rights under the 
+						a.c-green(href="#") Americans with Disabilities Act 
+						|(ADA).
+
+					p Mr. Cohen earned his Bachelor of Arts degree in Humanities from Thomas Edison State College, where he graduated with national honors. Mr. Cohen earned his Juris Doctor degree from Sandra Day O’Connor College of Law, Arizona State University in 2015. Mr. Cohen is a member of the bar of the states of New York and Arizona.
+
+					p Mr. Cohen is well-respected among his peers and has served as an active member of both the National Association of Consumer Advocates (NACA) and the National Consumer Law Center (NCLC) for the past three years.
+					a.btn(href="#") free consultation
+		.flex-wrap.justify-content-center 
+			.edu
+				.edu-content
+					.edu-img
+						img(src="img/placeholder2.svg", alt="placeholder")
+					p.fs-18.fw-semi Admissions:
+
+					ul.edu-list
+						li.edu-item ·  Arizona  ·  New York  ·  Eastern District of New York  ·  Southern District of New York ·  Northern District of New York
+			.edu
+				.edu-content
+					.edu-img
+						img(src="img/cap.svg", alt="cap")
+					p.fs-18.fw-semi Education
+					ul.edu-list
+						li.edu-item ·  Thomas Edison State College – B.A.
+						li.edu-item ·  Sandra Day O’Connor College of Law, Arizona State University – J.D.
+
+		.partice-areas 
+			h2.title Daniel C. Cohen
+			.flex-wrap 
+				a.partice-areas__item(href="#") 
+					object
+						img(src="img/layer_48_copy_6339.jpg", alt="img")
+						.partice-areas__content
+							p.fs-18.fw-semi.c-dark Fair Credit Reporting Act
+							p.partice-areas__text Quas volumus et pri, ex has nostrud mnesarchum, no has laboramus sententiae repudiandae. Augue maluisse.
+				a.partice-areas__item(href="#") 
+					object
+						img(src="img/layer_48_copy_6339.jpg", alt="img")
+						.partice-areas__content
+							p.fs-18.fw-semi.c-dark Fair Credit Reporting Act
+							p.partice-areas__text Debitis perfecto eu vel, numquam intellegat neglegentur ea duo. Qui ea posse repudiare rationibus. 
+				a.partice-areas__item(href="#") 
+					object
+						img(src="img/layer_48_copy_6339.jpg", alt="img")
+						.partice-areas__content
+							p.fs-18.fw-semi.c-dark Fair Credit Reporting Act
+							p.partice-areas__text Doctus copiosae principes in quo. Cu sale omnesque suscipit sea, ex aeterno dolorem deleniti mei. Nostrud disputando duo in.
+
+
+
+	section.contact
+		.container 
+			h2.title Contact us
+			.contact-row 
+				form.form 
+					p.form-title Feedback form
+					.flex-wrap
+						label.half-50 
+							input(type="text" placeholder="Your Name")
+							span.error-message error
+						label.half-50 
+							input(type="text" placeholder="Your Email")
+							span.error-message error
+					.flex-wrap
+						label.half-50 
+							input(type="text" placeholder="Phone Number")
+							span.error-message error
+						label.half-50 
+							.select
+								select
+									option(value="Choice Of Question Topic") Choice Of Question Topic
+					label
+						textarea(cols="30", rows="5" placeholder="Text Message")
+					button.btn(type="submit") Send
+				ul.contact-info
+					li.d-flex 
+						+icon("placeholder")
+						div
+							p.fs-18.fw-semi Office
+							p 300 Cadman Plaza West, 12th Floor Brooklyn, New York 11201
+					li.d-flex 
+						+icon("telephone")
+						div
+							p.fs-18.fw-semi Phone / Fax
+							p +1-929-575-4175
+							p +1-929-575-4175
+					li.d-flex 
+						+icon("message")
+						div
+							p.fs-18.fw-semi Email Address
+							p info@consumerattorneys.com
+
+
+
+
+
+					
+
+
+
+					
+
+
+			

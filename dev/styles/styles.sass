@@ -557,7 +557,92 @@ input[disabled]
   &:nth-child(2n+2)
     margin-right: 0
     
+.partner-main
+  background-color: #ffffff
+  box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.1)
+  padding: 45px 105px 10px
+  margin-top: 33px
+  .partner-right
+    padding-top: 40px
+    p
+      line-height: 24px
+    .btn 
+      margin-top: 50px
 
+.edu 
+  width: 44%
+  border-right: 1px solid #e6e6e6 
+  margin: 56px 0 0 0
+  padding: 0 15px
+  &:nth-child(2n+2)
+    border: none
+  &-img 
+    position: relative
+    padding-bottom: 25px
+    margin-bottom: 30px
+    &:before 
+      content: ''
+      position: absolute
+      bottom: 0 
+      left: 50% 
+      transform: translateX(-50%)
+      height: 3px 
+      background: #2f3579
+      width: 40px
+    img
+      width: 80px 
+      height: 80px
+  &-list
+    width: 100%
+    margin-top: 18px
+    display: flex 
+    flex-direction: column 
+    align-items: center
+  &-item 
+    float: left
+    word-break: break-word
+    position: relative
+    font-size: 16px
+    line-height: 24px
+    font-weight: 400
+    color: #404040
+    text-align: center
+    margin: 0 0 6px 0
+  &-content 
+    max-width: 333px
+    margin: 0 auto
+    display: flex 
+    flex-direction: column 
+    justify-content: center 
+    align-items: center
+
+.partice-areas 
+  margin-top: 40px
+  margin-bottom: 90px
+  background-color: #ffffff
+  box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.1)
+  padding: 57px 105px 
+  .title 
+    margin-bottom: 35px
+  &__item
+    margin: 20px 30px 0 0
+    width: calc(33.33% - 20px)
+    background-color: #ffffff
+    border: 1px solid #e6e6e6
+    img 
+      width: 100% 
+      height: 260px
+      object-fit: cover
+    &:last-child
+      margin-right: 0
+  &__content
+    padding: 25px 30px 35px
+  &__text
+    padding: 0 0 0 15px
+    margin-top: 17px
+    line-height: 19px
+    border-left: 3px solid #2f3579
+    height: 100%
 @import "modules/modules";
 
 .show-lg
@@ -568,4 +653,10 @@ input[disabled]
 
 .w-100
   width: 100%
+
+.bg-white 
+  background-color: #ffffff
+
+.bg-gray
+  background-color: #fafafa
 @import "utils/media";
