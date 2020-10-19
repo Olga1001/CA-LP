@@ -1,0 +1,140 @@
+extends layout/main
+
+block variables
+	-var title = 'About Us'
+	-var social = false
+
+block content
+	.container
+		ul.breadcrumbs
+			li.breadcrumbs__item
+				a.breadcrumbs__link(href="#")
+					img(src="img/blank_house_6306.png", alt="icon")
+			+breadcrumbs-item('About Us')
+		section.about_v2
+			h2.title About Us
+			p.about__text Audiam commodo eu mel, eam dolor altera cu. Tibique antiopam efficiantur sea ut, wisi velit prompta ut qui. An consul laudem his, posse vitae ex nec. Cu usu falli aperiri, alia prompta vocibus nam an. Ne discere eleifend consectetuer ius, mei phaedrum singulis euripidis in. Porro dolorum erroribus eum ad, ignota doctus te mel.
+			a.btn.mx-auto(href="#") free consultation
+			img.about__img(src="img/femida.png", alt="femida")
+	section.about_content
+		.container
+			img.about_content__logo.d-md-none(src="img/logo/logo-2.png", alt="logo")
+			.flex-wrap.flex-md-column-reverse
+				.w-md-50
+					.about_content__text
+						h4.fw-semi Putent explicari definitionem et eum
+						.text-content
+							p At eam fierent honestatis comprehensam, clita omittantur efficiantur eu eum, ius ex omnesque adipisci senserit. Id ius labores dolorum neglegentur, an pro semper nostrud. No duo repudiare hendrerit, te quo delenit constituto expetendis, ius copiosae intellegam voluptatibus at. Ea eum oportere periculis scriptorem.
+							p Usu te quas munere pericula, et nusquam ancillae vix, at mea quot eros. Causae dolorum vis ad, ei quo principes hendrerit. Id mazim reformidans eos, eum tale vide tota ad. An doctus liberavisse complectitur nec. Nam errem debitis ceteros an, duo ei congue soluta eirmod.
+
+				.w-md-50
+					img.about_content__img(src="img/rectangle_23_6487.jpg", alt="img")
+			.flex-wrap
+				.w-md-50
+					img.about_content__img(src="img/rectangle_23_6504.jpg", alt="img")
+				.w-md-50
+					.about_content__text_v2
+						h4.fw-semi Mea accumsan incorrupte mediocritatem id
+						.text-content
+							p Cu per mundi vocibus nusquam, mel in adolescens deseruisse voluptatum, graeci labores eos cu. Et vim atqui legimus, eum te duis viris pertinax. Ubique inciderint delicatissimi eu sit. Commodo facilis quo in, cum invidunt corrumpit te. Ne mea possit legimus appetere, an per porro ornatus lobortis, vivendo assueverit vel an.
+
+							p Quem ullum volumus ut duo. Modo hinc facilisi vim cu. Definitiones signiferumque sit an, illum eirmod iriure id eum, assum ullamcorper eam in. Sit ex enim dolor.
+
+
+	.container
+		section.practice.pt-90
+			h2.title Practice Areas
+			.slider.slider-practice
+				.practice-item 
+					img(src="img/practice/serv_shield.svg", alt="icon")
+					h3.fs-18.fw-semi.text-center Data <br> Protection
+					p.text-center Odio saperet electram duo at, suas commodo molestie ei mea, te pri fabellas accusamus definitiones.
+				.practice-item 
+					img(src="img/practice/serv_money.svg", alt="icon")
+					h3.fs-18.fw-semi.text-center Tracker Mortgage <br> Overcharging 
+					p.text-center Erat scripta argumentum ad vel. Corpora expetenda eloquentiam ne per. Usu ex volumus interesset intellegebat.
+				
+				.practice-item 
+					img(src="img/practice/serv_man.svg", alt="icon")
+					h3.fs-18.fw-semi.text-center Personal <br> Injury
+					p.text-center Quas volumus et pri, ex has nostrud mnesarchum, no has laboramus sententiae repudiandae. Augue maluisse.
+				.practice-item 
+					img(src="img/practice/search_diploma.svg", alt="icon")
+					h3.fs-18.fw-semi.text-center Probate
+					p.text-center His eu utinam integre. Iudico invidunt at mel, ne habeo antiopam eum. Duo te assum putent nonumes, possit.
+				.practice-item 
+					img(src="img/practice/serv_help.svg", alt="icon")
+					h3.fs-18.fw-semi.text-center Public <br> Inquiries
+					p.text-center Doming graeco disputando ea usu, an nec sapientem scriptorem theophrastus. Dolorem democritum id est.
+				
+				.practice-item 
+					img(src="img/practice/serv_shield.svg", alt="icon")
+					h3.fs-18.fw-semi.text-center Data <br> Protection
+					p.text-center Odio saperet electram duo at, suas commodo molestie ei mea, te pri fabellas accusamus definitiones.
+				.practice-item 
+					img(src="img/practice/serv_money.svg", alt="icon")
+					h3.fs-18.fw-semi.text-center Tracker Mortgage <br> Overcharging 
+					p.text-center Erat scripta argumentum ad vel. Corpora expetenda eloquentiam ne per. Usu ex volumus interesset intellegebat.
+				
+			.paginate
+				button.btn-arrow.btn-prev(type="button" data-index="1")
+					+icon("arrow")
+				.paginate-left 
+				.paginate-center /
+				.paginate-right
+				button.btn-arrow.btn-next(type="button" data-index="1")
+					+icon("arrow")
+	section.contact.bg-white.pt-90
+		.container 
+			h2.title Contact us
+			.contact-row 
+				form.form 
+					p.form-title Feedback form
+					.flex-wrap
+						label.half-50 
+							input(type="text" placeholder="Your Name")
+							span.error-message error
+						label.half-50 
+							input(type="text" placeholder="Your Email")
+							span.error-message error
+					.flex-wrap
+						label.half-50 
+							input(type="text" placeholder="Phone Number")
+							span.error-message error
+						label.half-50 
+							.select
+								select
+									option(value="Choice Of Question Topic") Choice Of Question Topic
+					label
+						textarea(cols="30", rows="5" placeholder="Text Message")
+					button.btn(type="submit") Send
+				ul.contact-info
+					li.d-flex 
+						+icon("placeholder")
+						div
+							p.fs-18.fw-semi Office
+							p 300 Cadman Plaza West, 12th Floor Brooklyn, New York 11201
+					li.d-flex 
+						+icon("telephone")
+						div
+							p.fs-18.fw-semi Phone / Fax
+							p +1-929-575-4175
+							p +1-929-575-4175
+					li.d-flex 
+						+icon("message")
+						div
+							p.fs-18.fw-semi Email Address
+							p info@consumerattorneys.com
+
+
+
+
+
+					
+
+
+
+					
+
+
+			

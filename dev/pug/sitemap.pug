@@ -1,0 +1,122 @@
+extends layout/main
+
+block variables
+	-var title = 'SITEMAP'
+	-var social = false
+
+block content
+	.container
+		ul.breadcrumbs
+			li.breadcrumbs__item
+				a.breadcrumbs__link(href="#")
+					img(src="img/blank_house_6306.png", alt="icon")
+			+breadcrumbs-item('Site Map ' )
+		section.sitemap
+			h1.title SITEMAP
+			.sitemap__block
+				.sitemap__block__conteiner
+					ul.sitemap-list 
+						li.sitemap-main
+							a.align-items-center(href="#")
+								img.sitemap-img(src="img/blank_house_6306.png", alt="icon home")
+								| Home
+						li.sitemap-accordion.active
+							.sitemap-item
+								+icon("angle-down-solid")
+								p.fw-semi About Us
+
+							ul.sitemap-drop
+								li.sitemap-drop__item 
+									a(href="#") Media
+								li.sitemap-drop__item 
+									a(href="#") Videos
+								li.sitemap-drop__item 
+									a(href="#") Referrals Program
+								li.sitemap-drop__item 
+									a(href="#") FAQ
+								li.sitemap-drop__item 
+									a(href="#") Testimonials
+								li.sitemap-drop__item 
+									a(href="#") Resources
+								li.sitemap-drop__item 
+									a(href="#") Our Community
+								li.sitemap-drop__item 
+									a(href="#") Privacy Policy
+								li.sitemap-drop__item  
+									a(href="#") Terms of Use
+						li.sitemap-accordion.active
+							.sitemap-item
+								+icon("angle-down-solid")
+								p.fw-semi Attorneys
+
+							ul.sitemap-drop
+								li.sitemap-drop__item 
+									a(href="#") Daniel C. Cohen
+								li.sitemap-drop__item 
+									a(href="#") Joseph H. Mizrahi
+								li.sitemap-drop__item 
+									a(href="#") Yosef Steinmetz
+								li.sitemap-drop__item 
+									a(href="#") Edward Y. Kroub
+								li.sitemap-drop__item 
+									a(href="#") Moshe O. Boroosan
+								li.sitemap-drop__item 
+									a(href="#") Jonathan Weiss
+								li.sitemap-drop__item 
+									a(href="#") Diana Goodwin
+								li.sitemap-drop__item 
+									a(href="#") Shlomit Buchinsky
+						li.sitemap-accordion.active
+							.sitemap-item
+								+icon("angle-down-solid")
+								p.fw-semi Practice Areas
+
+							ul.sitemap-drop
+								li.sitemap-drop__item 
+									a(href="#") Collection letters
+								li.sitemap-drop__item 
+									a(href="#") Bankruptcy
+								li.sitemap-drop__item 
+									a(href="#") Telephone Consumer Protection Act
+								li.sitemap-drop__item 
+									a(href="#") Fair Debt Collections Practices Act
+								li.sitemap-drop__item 
+									a(href="#") Personal Injury
+								li.sitemap-drop__item 
+									a(href="#") Americans with Disabilities Act
+								li.sitemap-drop__item 
+									a(href="#") Class Actions
+								li.sitemap-drop__item 
+									a(href="#") Data Breach Litigation
+								li.sitemap-drop__item 
+									a(href="#") Unlawful Background Checks
+								li.sitemap-drop__item 
+									a(href="#") Credit Reporting Errors
+								li.sitemap-drop__item 
+									a(href="#") Consumer Finance Litigation
+								li.sitemap-drop__item 
+									a(href="#") Fix Your Credit Score
+						li.sitemap-accordion
+							.sitemap-item
+								+icon("angle-down-solid")
+								p.fw-semi Articles and Reviews
+
+							ul.sitemap-drop
+								li.sitemap-drop__item 
+									a(href="#") Articles and Reviews
+						li.sitemap-accordion
+							.sitemap-item
+								+icon("angle-down-solid")
+								p.fw-semi Contact Us
+
+							ul.sitemap-drop
+								li.sitemap-drop__item 
+									a(href="#") Contact Us
+						li.sitemap-accordion
+							.sitemap-item
+								+icon("angle-down-solid")
+								p.fw-semi Intake Form
+
+							ul.sitemap-drop
+								li.sitemap-drop__item 
+									a(href="#") Contact Us

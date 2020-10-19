@@ -159,6 +159,12 @@ input[disabled]
   color: #202020
   opacity: 1
 
+.wrapper 
+  display: flex 
+  flex-direction: column 
+  justify-content: space-between
+  min-height: 100%
+
 .container 
   max-width: 1470px 
   padding: 0 15px 
@@ -654,7 +660,223 @@ input[disabled]
     line-height: 19px
     border-left: 3px solid #2f3579
     height: 100%
+
+.section-error
+  padding: 67px 0 80px
+  img 
+    margin: 75px auto 49px
+    max-width: 393px
+    width: 100%
+  &__text 
+    max-width: 250px 
+    width: 100% 
+    font-size: 16px
+    line-height: 24px
+    font-weight: 500
+    color: #191514
+    text-align: center 
+    margin: 0 auto 
+  .btn 
+    margin: 41px auto 0
+    padding-right: 50px
+
+.sitemap
+  &__block
+    max-width: 600px
+    width: 100%
+    background-color: #ffffff
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.1)
+    margin: 60px auto
+    padding: 78px 15px
+    &__conteiner
+      margin: 0 auto
+      width: 100%
+      max-width: 390px
+  &-img
+    width: 14px 
+    height: 14px 
+    margin-right: 22px
+  &-main
+    padding-left: 31px
+    margin-bottom: 21px
+  &-accordion
+    position: relative
+    padding-left: 31px
+    margin-bottom: 21px
+    cursor: pointer
+    &:before 
+      content: ''
+      position: absolute 
+      left: 0 
+      top: 0
+      width: 3px 
+      height: 0
+      background: #e6e6e6
+      transition: all 0.3s ease
+    &.active 
+      &:before 
+        height: 100% 
+      .sitemap-drop
+        display: block
+
+  &-item 
+    display: flex 
+    align-items: center
+    margin-bottom: 11px
+    svg 
+      width: 13px 
+      height: 13px
+      margin-right: 22px
+      fill: #44b64b
+  &-drop 
+    padding-left: 37px
+    display: none
+    &__item 
+      position: relative
+      padding-left: 15px
+      margin-bottom: 14px
+      a
+        color: #404040
+        &:hover 
+          color: #44b64b
+      &:before 
+        content: ''
+        position: absolute 
+        left: 0 
+        top: 6px
+        border-radius: 50% 
+        width: 2px 
+        height: 2px 
+        background: #404040
+
+.privacy-policy
+  .title 
+    margin: 0 auto 15px
+  &__center 
+    max-width: 1225px
+    width: 100%
+    margin: 49px auto 53px
+    line-height: 24px
+    text-align: center
+  &__block 
+    background-color: #ffffff
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.1)
+    padding: 58px 105px
+    margin-bottom: 90px
+    .c-navyblue 
+      margin-bottom: 20px
+  &__content  
+    border-left: 3px solid #e6e6e6
+    padding-left: 27px
+    margin-bottom: 50px
+    p 
+      margin-bottom: 20px
+      line-height: 24px
+      &:last-child
+        margin-bottom: 0
+
+.table
+  background-color: #ffffff
+  border: 1px solid #e6e6e6
+  width: 100% 
+  margin-bottom: 40px
+  overflow-x: auto
+  &-row
+    min-width: 700px
+    &:last-child
+      .table-td 
+        border: none
+  &-item 
+    padding: 0 30px
+    position: relative
+  &-left 
+    background-color: #fafafa
+    width: 280px
+  &-right 
+    width: calc(100% - 280px)
+  &-td
+    padding: 25px 0
+    height: 100%
+    border-bottom: 1px solid #e6e6e6
+    p 
+      line-height: 24px
+  &-main 
+    padding-bottom: 20px
+    &:before 
+      content: ''
+      position: absolute 
+      left: 30px
+      bottom: 0px 
+      width: 70px
+      height: 3px
+      background-color: #44b64b
+
+.about_v2
+  box-shadow: none
+  background-color: transparent 
+  padding-bottom: 219px
+  z-index: 2
+  .about__text 
+    margin: 36px auto 55px
+
+.text-content
+  border-left: 2px solid #44b64b
+  padding-left: 27px 
+  margin-top: 25px
+  p 
+    margin-bottom: 25px
+    line-height: 24px
+    &:last-child
+      margin-bottom: 0
+
+.about_content
+  padding: 275px 0 90px
+  position: relative
+  background-color: #ffffff
+  .container 
+    max-width: 1260px 
+    width: 100% 
+    padding: 0 15px
+  &__logo 
+    position: absolute
+    left: 50% 
+    top: calc(50% + 92.5px)
+    transform: translate(-50%,-50%)
+  &__text 
+    max-width: 523px
+    padding-right: 20px
+    &_v2 
+      padding-top: 75px
+      max-width: 523px
+      margin-left: auto
+      padding-left: 20px
+  &__img 
+    box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.1)
+    object-fit: cover 
+    height: 440px
+    width: 100%
+
+.table_v2
+  border: none
+  .table-left 
+    background-color: transparent
+    width: 220px
+  .table-right
+    width: calc(100% - 220px)
+  .table-td
+    border: none
+    height: fit-content
+    padding: 18px 0
+
+.dash 
+  width: 20px 
+  height: 1px 
+  background: #e6e6e6
+  
 @import "modules/modules";
+
+.w-md-50
+  width: 50% 
 
 .show-lg
   display: none 
@@ -670,4 +892,6 @@ input[disabled]
 
 .bg-gray
   background-color: #fafafa
+
+
 @import "utils/media";

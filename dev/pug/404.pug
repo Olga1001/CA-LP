@@ -1,0 +1,15 @@
+extends layout/main
+
+block variables
+	-var title = '404'
+	-var social = false
+
+block content
+	section.section-error
+		.container
+			h1.title PAGE NOT FOUND
+			img(src="img/404.png", alt="404")
+			p.section-error__text We are sorry, the page you are looking for cannot be found.
+			a.btn(href="#")
+				+icon("arrow")
+				|Return to the homepage

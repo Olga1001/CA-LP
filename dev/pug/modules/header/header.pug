@@ -21,22 +21,14 @@ header.header
                     a.menu-link(href="#") Contact Us
                 li.menu-item.show-lg
                     button.btn.bg-green(type="button") INTAKE FORM
-                if social
-                    li.social 
-                        a.social-link(href="#")
-                            +icon("facebook")
-                        a.social-link(href="#")
-                            +icon("twitter")
-                        a.social-link(href="#")
-                            +icon("instagram")
-                else 
-                    li.social.show-lg 
-                        a.social-link(href="#")
-                            +icon("facebook")
-                        a.social-link(href="#")
-                            +icon("twitter")
-                        a.social-link(href="#")
-                            +icon("instagram")
+
+                li(class = social ? 'social' : 'social show-lg')
+                    a.social-link(href="#")
+                        +icon("facebook")
+                    a.social-link(href="#")
+                        +icon("twitter")
+                    a.social-link(href="#")
+                        +icon("instagram")
 
             .align-items-center 
                 a.search(href="#")
