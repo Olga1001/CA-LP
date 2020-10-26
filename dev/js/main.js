@@ -79,6 +79,15 @@ $(document).ready(function () {
       ]
   });
 
+  $(".slider-pages").slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    dots: true,
+    arrows: true,
+    prevArrow: $('.btn-prev[data-index="1"]'),
+    nextArrow: $('.btn-next[data-index="1"]'),
+  });
+
   // tabs 
   $(".tab").click(function () {
       $(this).addClass('active').siblings().removeClass('active');
@@ -88,8 +97,8 @@ $(document).ready(function () {
 
   // questions 
   $(".question").click(function () {
-    $(this).toggleClass('active').parent().siblings().find(".question").removeClass('active');
-    $(this).siblings(".answer").slideToggle(300).parent().siblings().find(".answer").slideUp(300);
+    $(this).toggleClass('active');
+    $(this).siblings(".answer").slideToggle(300);
   });
 
   //burger, menu
@@ -97,4 +106,18 @@ $(document).ready(function () {
     $(this).toggleClass('active');
     $(".menu").toggleClass('active');
   });
+
+  // practice ares
+  if (window.matchMedia("(max-width: 767px)").matches) {
+    $(".areas-item").click(function () {
+      $(".areas-list").addClass("hide");
+      $(".areas-right").addClass("active");
+    });
+
+    $(".btn-back").click(function () {
+      $(".areas-list").removeClass("hide");
+      $(".areas-right").removeClass("active");
+    });
+  }
+ 
 });

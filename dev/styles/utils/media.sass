@@ -16,6 +16,9 @@
         width: 120px
         height: 36px
         margin-left: 15px
+    .card img
+        height: 13.6vw
+
 @media only screen and (max-width: 1199px)
     .menu 
         margin-right: auto
@@ -31,6 +34,14 @@
         padding: 40px 15px
     .partner-main
         padding: 40px 15px 10px
+    .card, .card:nth-child(3n+3) 
+        width: calc(50% - 15px)
+        margin-right: 30px
+        &:nth-child(2n+2)
+            margin-right: 0
+    .card img
+        height: 18vw
+            
 @media only screen and (max-width : 991px)
     p 
         font-size: 14px
@@ -202,6 +213,42 @@
     .table-td p
         line-height: 18px 
         font-size: 14px
+    .areas-list .fs-18
+        padding: 0 10px 20px
+        width: calc(100% - 50px)
+    .areas-item
+        padding: 0 15px
+    .areas-item img
+        width: 25px 
+        height: 25px 
+        margin-right: 10px
+    .areas-item__text
+        padding-left: 10px
+    .areas-list
+        width: 265px 
+    .areas-right 
+        width: calc(100% - 265px)
+    .slick-slide .card img
+        width: 100% 
+        height: 18vw
+    .card, .card:nth-child(3n+3) 
+        width: calc(50% - 10px)
+        margin-right: 20px
+        margin-bottom: 20px
+        &:nth-child(2n+2)
+            margin-right: 0
+    .card__content 
+        margin: 20px 0 30px  
+        padding: 0 15px
+    .areas-right 
+        padding: 35px 15px 60px       
+    .partner-left
+        width: 365px
+    .partner-right_v2
+        width: calc(100% - 365px - 15px)  
+    .partner-left__text
+        max-width: 340px 
+        margin: 20px auto 50px
 @media only screen and (max-width: 767px)
     .footer-col
         width: 100% 
@@ -300,6 +347,36 @@
         padding-top: 50px
     .text-content
         padding-left: 15px
+    .partner-left 
+        width: 310px
+        margin: 0 auto
+        padding-bottom: 20px
+        .partner-avatar 
+            margin-bottom: 30px
+    .partner-right_v2
+        width: calc(100% - 310px - 15px)
+    .partner-right_v2 
+        width: 100% 
+    .areas-list 
+        width: 100%
+        padding: 35px 0
+        transition: all 0.3s ease
+        &.hide
+            position: absolute
+            right: 100%
+            opacity: 0
+    .areas-right 
+        position: absolute
+        left: 100%
+        width: 100%
+        top: 0
+        transition: all 0.3s ease
+        &.active 
+            left: 0
+            opacity: 1
+            position: static
+    .btn-back 
+        display: block
 @media only screen and (max-width: 575px)
     .footer-top
         padding: 15px 0px 25px
@@ -369,3 +446,32 @@
         padding-left: 30px
     .sitemap__block
         padding: 40px 15px
+    .img-femida
+        width: 100px 
+        height: 140px
+    .practice-areas .fs-30
+        font-size: 21px
+    .partner-left .partner-avatar
+        margin-bottom: 0
+    .form-title
+        font-size: 14px 
+        line-height: 18px
+    .slick-slide 
+        .card 
+            width: 100% 
+            margin: 0 0 10px 0
+            object 
+                display: flex 
+            img
+                width: 80px 
+                height: auto
+                margin: 0 10px 0 0
+    .card__content
+        margin: 15px 0
+        padding: 0 10px 
+        border-width: 2px
+    .card__text
+        font-size: 12px
+        line-height: 16px
+    .areas-right__head
+        margin-bottom: 20px
