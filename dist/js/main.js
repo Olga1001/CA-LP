@@ -85,8 +85,8 @@ $(document).ready(function () {
   }); // questions 
 
   $(".question").click(function () {
-    $(this).toggleClass('active');
-    $(this).siblings(".answer").slideToggle(300);
+    $(this).toggleClass('active').parent().siblings().find(".question").removeClass('active');
+    $(this).siblings(".answer").slideToggle(300).parent().siblings().find(".answer").slideUp(300);
   }); //burger, menu
 
   $(".burger").click(function () {
