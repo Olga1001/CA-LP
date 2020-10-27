@@ -1,0 +1,246 @@
+extends layout/main
+
+block variables
+	-var title = 'practice areas'
+	-var social = false
+
+block content
+	.practice-areas_v2
+		.container.h-100
+			ul.breadcrumbs
+				li.breadcrumbs__item
+					a.breadcrumbs__link(href="#")
+						img(src="img/blank_house_6306.png", alt="icon")
+				+breadcrumbs-item('Practice Areas')
+			.flex-center-center
+				.pt-75
+					h1.fs-30.fw-bold.text-up.text-center.c-white Practice Areas
+					hr.line
+	.container
+		.box.d-flex.mt--97
+			ul.areas-list
+				li.flex-center-end 
+					p.fs-18.fw-semi Practice Areas
+				li.areas-item 
+					.flex-center-between
+						img(src="img/003_agenda_copy_6706.png", alt="icon")
+						.align-items-center.w-100 
+							p.areas-item__text.w-100 Bankruptcy
+							+icon("arrow")
+				li.areas-item 
+					.flex-center-between 
+						img(src="img/003_agenda_copy_6706.png", alt="icon")
+						.align-items-center.w-100 
+							p.areas-item__text.w-100 Collection letters
+							+icon("arrow")
+				li.areas-item 
+					.flex-center-between 
+						img(src="img/003_agenda_copy_6706.png", alt="icon")
+						.align-items-center.w-100 
+							p.areas-item__text.w-100 Telephone Consumer Protection Act
+							+icon("arrow")
+				li.areas-item 
+					.flex-center-between
+						img(src="img/003_agenda_copy_6706.png", alt="icon") 
+						.align-items-center.w-100 
+							p.areas-item__text.w-100 Fair Debt Collections Practices Act
+							+icon("arrow")
+				li.areas-item 
+					.flex-center-between 
+						img(src="img/003_agenda_copy_6706.png", alt="icon")
+						.align-items-center.w-100 
+							p.areas-item__text.w-100 Personal Injury'
+							+icon("arrow")
+				li.areas-item 
+					.flex-center-between 
+						img(src="img/003_agenda_copy_6706.png", alt="icon")
+						.align-items-center.w-100 
+							p.areas-item__text.w-100 Americans with Disabilities Act
+							+icon("arrow")
+				li.areas-item 
+					.flex-center-between 
+						img(src="img/003_agenda_copy_6706.png", alt="icon")
+						.align-items-center.w-100 
+							p.areas-item__text.w-100 Class Actions'Data Breach Litigation
+							+icon("arrow")
+				li.areas-item 
+					.flex-center-between 
+						img(src="img/003_agenda_copy_6706.png", alt="icon")
+						.align-items-center.w-100 
+							p.areas-item__text.w-100 Unlawful Background Checks
+							+icon("arrow")
+				li.areas-item 
+					.flex-center-between 
+						img(src="img/003_agenda_copy_6706.png", alt="icon")
+						.align-items-center.w-100 
+							p.areas-item__text.w-100 Credit Reporting Errors
+							+icon("arrow")
+				li.areas-item 
+					.flex-center-between 
+						img(src="img/003_agenda_copy_6706.png", alt="icon")
+						.align-items-center.w-100 
+							p.areas-item__text.w-100 Consumer Finance
+							+icon("arrow")
+				li.areas-item 
+					.flex-center-between 
+						img(src="img/003_agenda_copy_6706.png", alt="icon")
+						.align-items-center.w-100 
+							p.areas-item__text.w-100 Litigation
+							+icon("arrow")
+				li.areas-item 
+					.flex-center-between 
+						img(src="img/003_agenda_copy_6706.png", alt="icon")
+						.align-items-center.w-100 
+							p.areas-item__text.w-100 Fix Your Credit Score
+							+icon("arrow")
+			.areas-right.pb-30 
+				.areas-right__head.mb-20 
+					button.btn-back(type="button")
+						+icon("arrow")
+					.align-items-center
+						.shield 
+							img.shield-icon(src="img/001_recession_6819.png", alt="icon")
+						.relative
+							p.fs-18.fw-semi Related pages
+				.flex-wrap
+					a.card(href="#") 
+						object
+							img(src="img/layer_48_copy_6339.jpg", alt="img")
+							.card__content
+								p.card__text commune facilisis et eum. Ex vim tempor pericula imperdiet.
+					a.card(href="#") 
+						object
+							img(src="img/layer_48_copy_6339.jpg", alt="img")
+							.card__content
+								p.card__text commune facilisis et eum. Ex vim tempor pericula imperdiet.
+					a.card(href="#") 
+						object
+							img(src="img/layer_48_copy_6339.jpg", alt="img")
+							.card__content
+								p.card__text commune facilisis et eum. Ex vim tempor pericula imperdiet.	
+				.areas-right__head.mb-20.mt-10  
+					.align-items-center
+						.shield 
+							img.shield-icon(src="img/002_email_6821.png", alt="icon")
+						.relative
+							p.fs-18.fw-semi Collection letters
+				.flex-wrap
+					a.card(href="#") 
+						object
+							img(src="img/layer_48_copy_6339.jpg", alt="img")
+							.card__content
+								p.card__text Tollit maluisset mnesarchum qui an, dicat ridens splendide ad eum.
+				.areas-right__head.mb-20.mt-10  
+					.align-items-center
+						.shield 
+							img.shield-icon(src="img/003_agenda_copy_6706.png", alt="icon")
+						.relative
+							p.fs-18.fw-semi Telephone Consumer Protection Act
+				.flex-wrap
+					a.card(href="#") 
+						object
+							img(src="img/layer_48_copy_6339.jpg", alt="img")
+							.card__content
+								p.card__text Iriure commune facilisis et eum. Ex vim tempor pericula imperdiet.
+					a.card(href="#") 
+						object
+							img(src="img/layer_48_copy_6339.jpg", alt="img")
+							.card__content
+								p.card__text Mollis perfecto mei ei. Et nemore cotidieque nec, ius ex nisl reque legere.
+					a.card(href="#") 
+						object
+							img(src="img/layer_48_copy_6339.jpg", alt="img")
+							.card__content
+								p.card__text commune facilisis et eum. Ex vim tempor pericula imperdiet.
+					a.card(href="#") 
+						object
+							img(src="img/layer_48_copy_6339.jpg", alt="img")
+							.card__content
+								p.card__text commune facilisis et eum. Ex vim tempor pericula imperdiet.
+					a.card(href="#") 
+						object
+							img(src="img/layer_48_copy_6339.jpg", alt="img")
+							.card__content
+								p.card__text commune facilisis et eum. Ex vim tempor pericula imperdiet.
+				.areas-right__head.mb-20.mt-10  
+					.align-items-center
+						.shield 
+							img.shield-icon(src="img/004_debt_6864.png", alt="icon")
+						.relative
+							p.fs-18.fw-semi Fair Debt Collections
+				.flex-wrap
+					a.card(href="#") 
+						object
+							img(src="img/layer_48_copy_6339.jpg", alt="img")
+							.card__content
+								p.card__text Iriure commune facilisis et eum. Ex vim tempor pericula imperdiet.
+					a.card(href="#") 
+						object
+							img(src="img/layer_48_copy_6339.jpg", alt="img")
+							.card__content
+								p.card__text Mollis perfecto mei ei. Et nemore cotidieque nec, ius ex nisl reque legere.
+					a.card(href="#") 
+						object
+							img(src="img/layer_48_copy_6339.jpg", alt="img")
+							.card__content
+								p.card__text commune facilisis et eum. Ex vim tempor pericula imperdiet.
+					a.card(href="#") 
+						object
+							img(src="img/layer_48_copy_6339.jpg", alt="img")
+							.card__content
+								p.card__text commune facilisis et eum. Ex vim tempor pericula imperdiet.
+		
+	section.contact.pt-90
+		.container 
+			h2.title Want a Free Consultation?
+			.contact-row 
+				form.form 
+					p.form-title If you have a question, feel free to use the form below.
+					.flex-wrap
+						label.half-50 
+							input(type="text" placeholder="Your Name")
+							span.error-message error
+						label.half-50 
+							input(type="text" placeholder="Your Email")
+							span.error-message error
+					.flex-wrap
+						label.half-50 
+							input(type="text" placeholder="Phone Number")
+							span.error-message error
+						label.half-50 
+							.select
+								select
+									option(value="Choice Of Question Topic") Choice Of Question Topic
+					label
+						textarea(cols="30", rows="5" placeholder="Text Message")
+					button.btn(type="submit") Send
+				ul.contact-info
+					li.d-flex 
+						+icon("placeholder")
+						div
+							p.fs-18.fw-semi Office
+							p 300 Cadman Plaza West, 12th Floor Brooklyn, New York 11201
+					li.d-flex 
+						+icon("telephone")
+						div
+							p.fs-18.fw-semi Phone / Fax
+							p +1-929-575-4175
+							p +1-929-575-4175
+					li.d-flex 
+						+icon("message")
+						div
+							p.fs-18.fw-semi Email Address
+							p info@consumerattorneys.com
+
+
+
+
+
+					
+
+
+
+					
+
+
+			
