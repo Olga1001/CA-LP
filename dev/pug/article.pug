@@ -1,0 +1,396 @@
+extends layout/main
+
+block variables
+    -var title = 'Article'
+    -var social = true
+
+block content
+    .container
+        ul.breadcrumbs
+            li.breadcrumbs__item
+                a.breadcrumbs__link(href="#")
+                    img(src="img/blank_house_6306.png", alt="icon")
+            +breadcrumbs-item('Fair Debt Collections Practices Act',' ')
+            +breadcrumbs-item('Harassing phone calls from creditors')
+    article.article
+        .article-conteiner
+            header
+                h2.fs-30.fw-bold.text-up Harassing phone calls from creditors
+                .py-20
+                    hr.line-green.ml-0
+                .article-head.flex-center-between.flex-wrap 
+                    .article-info.align-items-center.flex-wrap 
+                        .align-items-center.article-info__item
+                            +icon("calendar")
+                            time 19.10.2020
+                        .align-items-center.article-info__item
+                            +icon("clock")
+                            p 112
+                        .article-info__item
+                            a.fs-16.c-green(href="#") By Daniel C. Cohen
+                    .align-items-center.share 
+                        p.fs-14.text-up.c-white-light.mr-10 Share it
+                        a.social_v2(href="#")
+                            +icon("facebook")
+                        a.social_v2(href="#")
+                            +icon("whatsapp")
+                        a.social_v2(href="#")
+                            +icon("twitter")
+
+            article.flex-wrap.mb-60
+                .article-left
+                    h3.fs-18.fw-medium When consumers fall behind on their bills, debt collectors start calling — but are increasingly using automated dialing systems to harass as many debtors as possible.
+                    .content-border
+                        p Creditors sometimes use telephone tactics that violate federal law, like flooding consumers with automated calls in spite of requests to make them stop.
+                        p And as the novel coronavirus outbreak continues to ravage the economy, millions of Americans have lost their jobs and falling behind on their bills.
+                        p Debtors are regulated by both the 
+                            a.c-green(href="#") Telephone Consumer Protection Act (TCPA) 
+                            | and the Federal Debt Collection Practices Act (FDCPA) when contacting consumers about money owed.
+                img.article-img(src="img/main_photo_7060.jpg", alt="photo")
+            article
+                .article-texts
+                    p The team at Consumer Attorneys will fight for consumers who have asked for collectors to stop interrupting their lives while they work to settle their debts.
+                    p.c-navyblue.fw-semi Debt Collectors Have Rules
+                    p Since the 1970s, the FDCPA has prohibited creditors from harassing consumers or using abusing or deceitful tactics to collect debts from consumers.
+                    p The TCPA, which has been on the books since 1991, also protects consumers from debt collectors who employ abusive methods -- like the use of threatening, abusive or profane language -- during phone calls as well as by text message.
+                    p Under the TCPA, a court may find that a company that contacted a consumer via call or text without their consent may have to cough up $500 for each contact.
+                    p If a judge finds that a company willfully made contact with a consumer after it was told to back off, it may have to pay $1,500 per violation.
+                    p.c-navyblue.fw-semi Under the FDCPA, debt collectors may not:
+                    ul.list.pb-10 
+                        li.list-item deposit a consumer’s post-dated check early
+                        li.list-item attempt to collect more from a consumer than allowed by contract or state law
+                        li.list-item  contact a consumer about a debt via postcard or with a letter in an envelope indicating that it was sent by a debt collector
+                    p Creditors are also barred from falsely claiming they are a lawyer when contacting consumers about a debt or threatening to have them arrested if they can’t pay up.        
+                .video
+                    iframe(width="100%" height="692" src="https://www.youtube.com/embed/ClhuRYjci-g" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
+                .article-texts
+                    p Companies who run afoul of the FDCPA -- or third parties hired to collect debts -- may also have to pay up to $1,000 for each consumer affected by their violations.
+                    p The Orange County, California-based American Advisors Group recently agreed to pay $3.5 million to settle a class-action suit filed under the TCPA by a consumer who says he was illegally contacted by bill collectors and telemarketers.
+                    p Despite these protections, debt collectors may still employ abusive tactics to harass consumers about their bills -- or rely upon automated dialers to do the job for them, as many have done in recent years.
+                    p Most people can recognize when they’re getting a call from a robot: an unfamiliar number comes up on their caller ID and, upon answering, there may be a few seconds of dead air before a prerecorded message starts to play.
+                    p Some companies also use autodialers to connect consumers with live operators.
+                    p Consumers should remember that debt collectors are not allowed to use robocallers or autodialers to contact people without their consent -- as well as consumers who have requested to not be contacted.
+                    p How We Can Help
+                    p Consumers who are being contacted by debt collectors should hold on to any written correspondence and keep records of any calls they receive -- even if they are autocalls -- noting dates and times and anything discussed.
+                    p Those records could be used to hold debt collectors accountable in court if they have violated federal law -- and the lawyers Consumer Attorneys is here to fight for consumers who believe they are being harassed by creditors.
+                footer.article-footer.align-items-center
+                    p.fs-14.text-up.c-white-light.mr-10 Share it
+                    a.social_v2(href="#")
+                        +icon("facebook")
+                    a.social_v2(href="#")
+                        +icon("whatsapp")
+                    a.social_v2(href="#")
+                        +icon("twitter")
+            article.comments 
+                header
+                    .align-items-center
+                        h2.fs-30.fw-bold.text-up  Comments  
+                        +icon("comments")
+                        p 112
+                    hr.line.ml-0
+                ul.comments-list 
+                    li.comments-item
+                        .avatar
+                            img(src="img/avatar.png", alt="avatar") 
+                        div.comments-item__content
+                            .align-items-center
+                                p.fs-18.fw-bold Antonio Tots
+                                time.align-items-center.c-white-light
+                                    +icon("clock")
+                                    span.mr-10 15 Sep
+                                    | 7:45AM
+                            .text-content
+                                p His utinam graecis ea, legimus repudiandae pro ad, sed officiis temporibus id. Ius in deserunt moderatius, vis everti adolescens no, te his errem iudicabit philosophia. Eam possim voluptua ea, pro no hendrerit dissentiunt, eu eum idque clita. Porro insolens gloriatur has et. Ex harum dissentiunt vix, nam ei iriure labitur, ex duo adhuc lucilius aliquando. Eu vim dolores dissentiunt, has no veri facer, ad verear utroque inimicus vim.
+ 
+                    li.comments-item
+                        .avatar
+                            img(src="img/avatar.png", alt="avatar") 
+                        div.comments-item__content
+                            .align-items-center
+                                p.fs-18.fw-bold Whiliam Depo
+                                time.align-items-center.c-white-light
+                                    +icon("clock")
+                                    span.mr-10 12 Sep
+                                    | 7:45AM
+                            .text-content
+                                p Nam an prima sonet reprehendunt. Cum augue integre ei, purto feugiat assentior eos an, mei ne aeque primis disputationi.
+
+                    li.comments-item
+                        .avatar
+                            img(src="img/avatar.png", alt="avatar") 
+                        div.comments-item__content
+                            .block-gray
+                                .align-items-center.flex-wrap
+                                    p.fs-18.fw-bold Whiliam Depo
+                                    time.align-items-center.c-white-light
+                                        +icon("clock")
+                                        span.mr-10 12 Sep
+                                        | 7:45AM
+                                .text-content
+                                    p Nam an prima sonet reprehendunt. Cum augue integre ei, purto feugiat assentior eos an, mei ne aeque primis ...
+
+                            .align-items-center
+                                p.fs-18.fw-bold.c-navyblue Daniel C. Cohen
+                                time.align-items-center.c-white-light
+                                    +icon("clock")
+                                    span.mr-10 12 Sep
+                                    | 7:45AM
+                            .text-content
+                                p Nam an prima sonet reprehendunt. Cum augue integre ei, purto feugiat assentior eos an, mei ne aeque primis disputationi. Ut cum ipsum percipitur, te dicam placerat interpretaris est. Alterum dolorum percipitur mea eu. Iusto tantas soleat ex qui. Ei malis mollis adversarium mea.
+
+                    li.comments-item
+                        .avatar
+                            img(src="img/avatar-empty.png", alt="avatar") 
+                        div.comments-item__content
+                            .align-items-center
+                                p.fs-18.fw-bold Ellise Winter
+                                time.align-items-center.c-white-light
+                                    +icon("clock")
+                                    span.mr-10 8 Sep
+                                    | 8:45AM
+                            .text-content
+                                p At eos sanctus insolens mandamus. His ei labore vituperatoribus, ex eum errem mentitum gloriatur. Tractatos argumentum mel ei. Vim id tota eius aperiam, mea alia noster suscipit ea, pri ut nostrum constituto ullamcorper. Prima liber salutatus sea id, cu cibo porro convenire cum. Nulla oratio at sit. Ei rebum appetere appellantur mel, decore liberavisse pri eu. Dicat elitr consequat usu at, mea te facer ocurreret adolescens. Ex ignota option omittantur ius. Alia graecis delectus et nec, zril similique contentiones pro ea, at vivendo tibique vis. At nobis iuvaret ius.
+                button.btn.bg-gray.mx-auto(type="button") 
+                    +icon("arrow")
+                    span.text-initial Load all comments
+            form.form
+                h2.title.mb-30 Add your comment
+                .flex-wrap
+                    label.half-50 
+                        input(type="text" placeholder="Your Name")
+                        span.error-message error
+                    label.half-50 
+                        input(type="text" placeholder="Your Email")
+                        span.error-message error
+                label
+                        textarea(cols="30", rows="5" placeholder="Comment")
+                button.btn.mx-auto.btn-send(type="submit") Send
+                    +icon("arrow")
+    .container
+        .box.d-flex
+            ul.areas-list
+                li.flex-center-end 
+                    p.fs-18.fw-semi Practice Areas
+                li.areas-item 
+                    .flex-center-between
+                        img(src="img/003_agenda_copy_6706.png", alt="icon")
+                        .align-items-center.w-100 
+                            p.areas-item__text.w-100 Bankruptcy
+                            +icon("arrow")
+                li.areas-item 
+                    .flex-center-between 
+                        img(src="img/003_agenda_copy_6706.png", alt="icon")
+                        .align-items-center.w-100 
+                            p.areas-item__text.w-100 Collection letters
+                            +icon("arrow")
+                li.areas-item 
+                    .flex-center-between 
+                        img(src="img/003_agenda_copy_6706.png", alt="icon")
+                        .align-items-center.w-100 
+                            p.areas-item__text.w-100 Telephone Consumer Protection Act
+                            +icon("arrow")
+                li.areas-item 
+                    .flex-center-between
+                        img(src="img/003_agenda_copy_6706.png", alt="icon") 
+                        .align-items-center.w-100 
+                            p.areas-item__text.w-100 Fair Debt Collections Practices Act
+                            +icon("arrow")
+                li.areas-item 
+                    .flex-center-between 
+                        img(src="img/003_agenda_copy_6706.png", alt="icon")
+                        .align-items-center.w-100 
+                            p.areas-item__text.w-100 Personal Injury'
+                            +icon("arrow")
+                li.areas-item 
+                    .flex-center-between 
+                        img(src="img/003_agenda_copy_6706.png", alt="icon")
+                        .align-items-center.w-100 
+                            p.areas-item__text.w-100 Americans with Disabilities Act
+                            +icon("arrow")
+                li.areas-item 
+                    .flex-center-between 
+                        img(src="img/003_agenda_copy_6706.png", alt="icon")
+                        .align-items-center.w-100 
+                            p.areas-item__text.w-100 Class Actions'Data Breach Litigation
+                            +icon("arrow")
+                li.areas-item 
+                    .flex-center-between 
+                        img(src="img/003_agenda_copy_6706.png", alt="icon")
+                        .align-items-center.w-100 
+                            p.areas-item__text.w-100 Unlawful Background Checks
+                            +icon("arrow")
+                li.areas-item 
+                    .flex-center-between 
+                        img(src="img/003_agenda_copy_6706.png", alt="icon")
+                        .align-items-center.w-100 
+                            p.areas-item__text.w-100 Credit Reporting Errors
+                            +icon("arrow")
+                li.areas-item 
+                    .flex-center-between 
+                        img(src="img/003_agenda_copy_6706.png", alt="icon")
+                        .align-items-center.w-100 
+                            p.areas-item__text.w-100 Consumer Finance
+                            +icon("arrow")
+                li.areas-item 
+                    .flex-center-between 
+                        img(src="img/003_agenda_copy_6706.png", alt="icon")
+                        .align-items-center.w-100 
+                            p.areas-item__text.w-100 Litigation
+                            +icon("arrow")
+                li.areas-item 
+                    .flex-center-between 
+                        img(src="img/003_agenda_copy_6706.png", alt="icon")
+                        .align-items-center.w-100 
+                            p.areas-item__text.w-100 Fix Your Credit Score
+                            +icon("arrow")
+            .areas-right
+                .areas-right__head
+                    button.btn-back(type="button")
+                        +icon("arrow")
+                    .relative
+                        p.fs-18.fw-semi Related pages
+                .slider-pages
+                    .slider-pages-item
+                        a.card(href="#") 
+                            object
+                                img(src="img/layer_48_copy_6339.jpg", alt="img")
+                                .card__content
+                                    p.card__text commune facilisis et eum. Ex vim tempor pericula imperdiet.
+                        a.card(href="#") 
+                            object
+                                img(src="img/layer_48_copy_6339.jpg", alt="img")
+                                .card__content
+                                    p.card__text commune facilisis et eum. Ex vim tempor pericula imperdiet.
+                        a.card(href="#") 
+                            object
+                                img(src="img/layer_48_copy_6339.jpg", alt="img")
+                                .card__content
+                                    p.card__text commune facilisis et eum. Ex vim tempor pericula imperdiet.
+                        a.card(href="#") 
+                            object
+                                img(src="img/layer_48_copy_6339.jpg", alt="img")
+                                .card__content
+                                    p.card__text commune facilisis et eum. Ex vim tempor pericula imperdiet.
+                        a.card(href="#") 
+                            object
+                                img(src="img/layer_48_copy_6339.jpg", alt="img")
+                                .card__content
+                                    p.card__text commune facilisis et eum. Ex vim tempor pericula imperdiet.
+                        a.card(href="#") 
+                            object
+                                img(src="img/layer_48_copy_6339.jpg", alt="img")
+                                .card__content
+                                    p.card__text commune facilisis et eum. Ex vim tempor pericula imperdiet.
+                    .slider-pages-item
+                        a.card(href="#") 
+                            object
+                                img(src="img/layer_48_copy_6339.jpg", alt="img")
+                                .card__content
+                                    p.card__text commune facilisis et eum. Ex vim tempor pericula imperdiet.
+                        a.card(href="#") 
+                            object
+                                img(src="img/layer_48_copy_6339.jpg", alt="img")
+                                .card__content
+                                    p.card__text commune facilisis et eum. Ex vim tempor pericula imperdiet.
+                        a.card(href="#") 
+                            object
+                                img(src="img/layer_48_copy_6339.jpg", alt="img")
+                                .card__content
+                                    p.card__text commune facilisis et eum. Ex vim tempor pericula imperdiet.
+                        a.card(href="#") 
+                            object
+                                img(src="img/layer_48_copy_6339.jpg", alt="img")
+                                .card__content
+                                    p.card__text commune facilisis et eum. Ex vim tempor pericula imperdiet.
+                        a.card(href="#") 
+                            object
+                                img(src="img/layer_48_copy_6339.jpg", alt="img")
+                                .card__content
+                                    p.card__text commune facilisis et eum. Ex vim tempor pericula imperdiet.
+                        a.card(href="#") 
+                            object
+                                img(src="img/layer_48_copy_6339.jpg", alt="img")
+                                .card__content
+                                    p.card__text commune facilisis et eum. Ex vim tempor pericula imperdiet.
+            
+                    .slider-pages-item
+                        a.card(href="#") 
+                            object
+                                img(src="img/layer_48_copy_6339.jpg", alt="img")
+                                .card__content
+                                    p.card__text commune facilisis et eum. Ex vim tempor pericula imperdiet.
+                        a.card(href="#") 
+                            object
+                                img(src="img/layer_48_copy_6339.jpg", alt="img")
+                                .card__content
+                                    p.card__text commune facilisis et eum. Ex vim tempor pericula imperdiet.
+                        a.card(href="#") 
+                            object
+                                img(src="img/layer_48_copy_6339.jpg", alt="img")
+                                .card__content
+                                    p.card__text commune facilisis et eum. Ex vim tempor pericula imperdiet.
+                        a.card(href="#") 
+                            object
+                                img(src="img/layer_48_copy_6339.jpg", alt="img")
+                                .card__content
+                                    p.card__text commune facilisis et eum. Ex vim tempor pericula imperdiet.
+                        a.card(href="#") 
+                            object
+                                img(src="img/layer_48_copy_6339.jpg", alt="img")
+                                .card__content
+                                    p.card__text commune facilisis et eum. Ex vim tempor pericula imperdiet.
+                        a.card(href="#") 
+                            object
+                                img(src="img/layer_48_copy_6339.jpg", alt="img")
+                                .card__content
+                                    p.card__text commune facilisis et eum. Ex vim tempor pericula imperdiet.
+            
+                .paginate
+                    button.btn-arrow.btn-prev(type="button" data-index="1")
+                        +icon("arrow")
+                    .paginate-left 1
+                    .paginate-center /
+                    .paginate-right 3
+                    button.btn-arrow.btn-next(type="button" data-index="1")
+                        +icon("arrow")
+    section.contact.pt-90
+        .container 
+            h2.title Want a Free Consultation?
+            .contact-row 
+                form.form 
+                    p.form-title If you have a question, feel free to use the form below.
+                    .flex-wrap
+                        label.half-50 
+                            input(type="text" placeholder="Your Name")
+                            span.error-message error
+                        label.half-50 
+                            input(type="text" placeholder="Your Email")
+                            span.error-message error
+                    .flex-wrap
+                        label.half-50 
+                            input(type="text" placeholder="Phone Number")
+                            span.error-message error
+                        label.half-50 
+                            .select
+                                select
+                                    option(value="Choice Of Question Topic") Choice Of Question Topic
+                    label
+                        textarea(cols="30", rows="5" placeholder="Text Message")
+                    button.btn(type="submit") Send
+                ul.contact-info
+                    li.d-flex 
+                        +icon("placeholder")
+                        div
+                            p.fs-18.fw-semi Office
+                            p 300 Cadman Plaza West, 12th Floor Brooklyn, New York 11201
+                    li.d-flex 
+                        +icon("telephone")
+                        div
+                            p.fs-18.fw-semi Phone / Fax
+                            p +1-929-575-4175
+                            p +1-929-575-4175
+                    li.d-flex 
+                        +icon("message")
+                        div
+                            p.fs-18.fw-semi Email Address
+                            p info@consumerattorneys.com
