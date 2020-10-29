@@ -20,6 +20,8 @@
         height: 13.6vw
     .video 
         margin: 0 -15px 38px
+    .dropdown
+        max-width: 72.5vw
 @media only screen and (max-width: 1199px)
     .menu 
         margin-right: auto
@@ -43,6 +45,10 @@
     .card img
         height: 18vw
             
+    .dropdown
+        max-width: 100% 
+        left: 0 
+        transform: none
 @media only screen and (max-width : 991px)
     p 
         font-size: 14px
@@ -66,6 +72,7 @@
         transition: all 0.3s ease
         display: block
         transform: translateX(-100px)
+        overflow-y: auto
         &.active 
             opacity: 1 
             pointer-events: auto
@@ -259,6 +266,29 @@
         height: 450px
     .article-info__item
         margin-right: 20px
+    .dropdown
+        position: initial
+        padding: 15px
+        border-bottom: 1px solid #e6e6e6
+        display: none 
+        background-color: transparent
+    .dropdown-bottom
+        background: none 
+        padding: 0
+    .dropdown-container
+        padding-bottom: 0
+    .menu-link:hover ~ .dropdown, .dropdown:hover
+        display: block
+        opacity: 1 
+        pointer-events: auto
+    .overlay
+        display: none
+    .our-offices__item
+        width: 33.33%
+    .our-offices__bottom .our-offices__item
+        width: 50%
+    .our-offices__item
+        margin: 20px 0
 @media only screen and (max-width: 767px)
     .footer-col
         width: 100% 
@@ -394,6 +424,13 @@
     .avatar 
         width: 80px 
         height: 80px
+    .dropdown-container .list
+        width: 100%
+        padding: 0
+    .our-offices__item
+        width: 50%
+    #map
+        height: 400px
 @media only screen and (max-width: 575px)
     .footer-top
         padding: 15px 0px 25px
@@ -530,3 +567,6 @@
         line-height: 18px
     .block-gray
         padding: 10px
+    .our-offices__item, .our-offices__bottom .our-offices__item
+        width: 100%
+    

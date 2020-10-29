@@ -1,3 +1,4 @@
+.overlay(class = active ? 'active' : '')
 header.header 
     .container
         .flex-center-between
@@ -9,14 +10,62 @@ header.header
                 img.logo__img-icon(src="img/logo/icon.svg", alt="logo")
                 img.logo__img(src="img/logo/logo_100x30.svg", alt="logo")
             ul.menu
-                li.menu-item.active
+                li.menu-item
                     a.menu-link(href="#") About Us
                 li.menu-item
                     a.menu-link(href="#") Attorneys  
                 li.menu-item
                     a.menu-link(href="#") Practice Areas
-                li.menu-item
+                li.menu-item.active
                     a.menu-link(href="#") Articles and Reviews
+                    .dropdown(class = active ? 'active' : '')
+                        .dropdown-container.justify-content-between.flex-wrap
+                            ul.list 
+                                li
+                                    p.fs-18.fw-semi Latest Articles
+                                li.list-item 
+                                    a(href="#")
+                                        +icon("arrow") 
+                                        span Personal Injury in Car Accidents
+                                li.list-item 
+                                    a(href="#") 
+                                        +icon("arrow") 
+                                        span Disabled People Lack Adequate Access to the World Wide Web
+                                li.list-item 
+                                    a(href="#") 
+                                        +icon("arrow") 
+                                        span ADA Disabled Peoples Accessibility Rights
+                                li.list-item 
+                                    a(href="#") 
+                                        +icon("arrow") 
+                                        span Americans with Disabilities Website Accessibility Problems
+                                li.list-item 
+                                    a(href="#") 
+                                        +icon("arrow") 
+                                        span Creditors Collecting on Payday Loans
+                            ul.list 
+                                li.list-item 
+                                    a(href="#") 
+                                        +icon("arrow") 
+                                        span How to Delete Inquiries From Your Credit Report
+                                li.list-item 
+                                    a(href="#") 
+                                        +icon("arrow") 
+                                        span Identity Theft How Does it Happen - How to Fix It
+                                li.list-item 
+                                    a(href="#") 
+                                        +icon("arrow") 
+                                        span Debt Collectors Collection Letters
+                                li.list-item 
+                                    a(href="#") 
+                                        +icon("arrow") 
+                                        span Bankruptcy: Chapter-13
+                                li.list-item 
+                                    a(href="#") 
+                                        +icon("arrow") 
+                                        span Bankruptcy: Chapter 7
+                        .dropdown-bottom 
+                            a.btn.btn-2.green.mx-auto(href="#") read it all
                 li.menu-item
                     a.menu-link(href="#") Contact Us
                 li.menu-item.show-lg

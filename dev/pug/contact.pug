@@ -1,0 +1,104 @@
+extends layout/main
+
+block variables
+	-var title = 'Главная страница'
+	-var social = false
+	//- -var active = true
+
+block content
+
+	section.contact.pt-75
+		.container 
+			h2.title.mb-30 Contact Us
+			.our-offices
+				.our-offices__container
+					h3.fs-18.fw-semi.text-center.mb-10 Our Offices
+					.flex-wrap 
+						.our-offices__item
+							.point
+								p.fs-18.c-green.fw-bold 01
+								+icon("placeholder3")
+							hr.line-small 
+							.text-center
+								p 300 Cadman Plaza West, 12th Floor 
+								p.fw-semi Brooklyn, New York,  
+									span.fw-normal  11201
+						.our-offices__item 
+							.point
+								p.fs-18.c-green.fw-bold 02
+								+icon("placeholder3")
+							hr.line-small 
+							.text-center 
+								p 101 Hudson Street, 21st Floor
+								p.fw-semi Jersey City, New Jersey,  
+									span.fw-normal  07302
+						.our-offices__item 
+							.point
+								p.fs-18.c-green.fw-bold 03
+								+icon("placeholder3")
+							hr.line-small
+							.text-center 
+								p 1221 Brickell Avenue, Suite 900, 
+								p.fw-semi Miami, Florida, 
+									span.fw-normal  33131
+						.our-offices__item 
+							.point
+								p.fs-18.c-green.fw-bold 04
+								+icon("placeholder3")
+							hr.line-small 
+							.text-center
+								p 7047 E. Greenway Parkway, Suite 250,
+								p.fw-semi Scottsdale, Arizona, 
+									span.fw-normal  85254
+						.our-offices__item
+							.point
+								p.fs-18.c-green.fw-bold 05
+								+icon("placeholder3")
+							hr.line-small 
+							.text-center
+								p 626 RexCorp Plaza, 6th floor
+								p.fw-semi Uniondale, NY  
+									span.fw-normal  11556
+					.flex-wrap.our-offices__bottom 
+						.our-offices__item
+							+icon("telephone")
+							.text-center
+								p.fs-18.fw-semi.mb-10 Phone 
+									span.c-gray / 
+									|Fax
+								p +1-929-575-4175 
+									+icon("whatsapp") 
+									span.c-green Whatsapp
+						.our-offices__item
+							+icon("message")
+							.text-center
+								p.fs-18.fw-semi.mb-10 Email Address
+								p info@consumerattorneys.com 
+
+			h2.title.mb-30 Want to Speak to an Attorney?
+			form.form 
+				p.form-title.text-center.mb-60 If you have a question, feel free to use the form below.
+				.flex-wrap
+					label.half-50 
+						input(type="text" placeholder="Your Name")
+						span.error-message error
+					label.half-50 
+						input(type="text" placeholder="Your Email")
+						span.error-message error
+				.flex-wrap
+					label.half-50 
+						input(type="text" placeholder="Phone Number")
+						span.error-message error
+					label.half-50 
+						.select
+							select
+								option(value="Choice Of Question Topic") Choice Of Question Topic
+				label
+					textarea(cols="30", rows="5" placeholder="Text Message")
+				button.btn.btn-send.mx-auto(type="submit") Send
+					+icon("arrow")
+	#map 
+
+block script
+	script(src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDlPe54MZYGOd-IZKpvR_LYMCQfN64BYl8")
+	script(src="js/map.js")
