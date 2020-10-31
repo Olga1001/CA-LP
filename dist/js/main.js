@@ -103,5 +103,13 @@ $(document).ready(function () {
       $(".areas-list").removeClass("hide");
       $(".areas-right").removeClass("active");
     });
-  }
+  } // menu dropdown 
+
+
+  $(".menu-item, .dropdown").mouseover(function () {
+    $(".overlay").addClass('active');
+  });
+  $(".menu-item, .dropdown").mouseout(function () {
+    $(".overlay").removeClass('active');
+  });
 });

@@ -47,8 +47,20 @@
             
     .dropdown
         max-width: 100% 
+        width: 100%
         left: 0 
         transform: none
+        padding: 20px
+        min-width: 680px 
+
+    .dropdown.right-mob
+        left: 50% 
+        transform: translateX(-50%)
+    .dropdown-container .list.w-33
+        width: calc(50% - 15px)
+        &:nth-child(2n+2)
+            margin-right: 0
+            
 @media only screen and (max-width : 991px)
     p 
         font-size: 14px
@@ -289,6 +301,13 @@
         width: 50%
     .our-offices__item
         margin: 20px 0
+    .dropdown
+        padding: 20px 15px
+        min-width: auto 
+    .dropdown.right-mob
+        left: 0
+        transform: none
+            
 @media only screen and (max-width: 767px)
     .footer-col
         width: 100% 
@@ -567,6 +586,8 @@
         line-height: 18px
     .block-gray
         padding: 10px
-    .our-offices__item, .our-offices__bottom .our-offices__item
+    .our-offices__item, .our-offices__bottom .our-offices__item, .dropdown-container .list.w-33
         width: 100%
+    .dropdown-container .list.w-33
+        margin-right: 0
     

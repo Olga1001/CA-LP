@@ -20,19 +20,25 @@
     display: flex
     &-item 
         padding: 0 10px
-        &.active 
+        position: relative
+        &.active, &:hover 
             background-color: #f5f5f5
             .menu-link
                 border-bottom: 3px solid #44b64b
                 font-weight: 600
                 color: #2f3579
-
+            .dropdown 
+                opacity: 1 
+                pointer-events: auto
+            .menu-link 
+                // min-width: 100%
     &-link 
         display: flex 
         align-items: center 
         height: 80px
         padding: 0 10px
         font-weight: 500
+        text-align: center
         color: #191514
 
 .social 
@@ -105,8 +111,8 @@
     z-index: 8
     background-color: #ffffff
     max-width: 1020px 
-    width: 100%
-    padding: 58px 15px 0
+    width: max-content
+    padding: 20px 45px 0
     opacity: 0 
     pointer-events: none
     transition: all 0.3s ease
@@ -115,15 +121,16 @@
         opacity: 1
         pointer-events: auto 
     &-container  
-        max-width: 805px 
-        width: 100% 
+        max-width: 930px 
+        width: fit-content
         margin: 0 auto
-        padding-bottom: 35px
+        padding-bottom: 20px
         .list 
-            width: calc(50% - 10px)
+            width: calc(50% - 15px)
             padding-right: 15px
-            &:first-child
-                margin-right: 20px
+            margin-right: 30px
+            &:last-child
+                margin-right: 0
             a 
                 display: flex
             span 
@@ -146,8 +153,10 @@
                     width: 20px
                     opacity: 1
                     margin-right: 15px
+            &.w-33 
+                width: calc(33.33% - 20px)
     &-bottom  
         background-color: #fafafa 
-        padding: 30px 0 
+        padding: 20px 0 
 
 

@@ -1,3 +1,4 @@
+
 .overlay(class = active ? 'active' : '')
 header.header 
     .container
@@ -14,11 +15,125 @@ header.header
                     a.menu-link(href="#") About Us
                 li.menu-item
                     a.menu-link(href="#") Attorneys  
+                    .dropdown(class = active ? 'active' : '')
+                        .dropdown-container.justify-content-between.flex-wrap
+                            ul.list 
+                                li.list-item 
+                                    a(href="#")
+                                        +icon("arrow") 
+                                        span Daniel Cohen
+                                li.list-item 
+                                    a(href="#") 
+                                        +icon("arrow") 
+                                        span  Joseph Mizrahi
+                                li.list-item 
+                                    a(href="#") 
+                                        +icon("arrow") 
+                                        span Edward Kroub
+                                li.list-item 
+                                    a(href="#") 
+                                        +icon("arrow") 
+                                        span  Moshe Boroosan
+                            ul.list 
+                                li.list-item 
+                                    a(href="#") 
+                                        +icon("arrow") 
+                                        span Yosef Steinmetz
+                                li.list-item 
+                                    a(href="#") 
+                                        +icon("arrow") 
+                                        span Jonathan Weiss
+                                li.list-item 
+                                    a(href="#") 
+                                        +icon("arrow") 
+                                        span Diana Goodwin
+                                li.list-item 
+                                    a(href="#") 
+                                        +icon("arrow") 
+                                        span Naomi Jawahar
                 li.menu-item
                     a.menu-link(href="#") Practice Areas
-                li.menu-item.active
-                    a.menu-link(href="#") Articles and Reviews
                     .dropdown(class = active ? 'active' : '')
+                        .dropdown-container.justify-content-between.flex-wrap
+                            ul.list.w-33 
+                                li
+                                    p.fs-18.fw-semi Consumer Finance Litigation
+                                li
+                                    p.fs-18.fw-semi Unlawful Credit Reporting
+                                li.list-item 
+                                    a(href="#")
+                                        +icon("arrow") 
+                                        span Credit Reporting Errors
+                                li.list-item 
+                                    a(href="#") 
+                                        +icon("arrow") 
+                                        span  Mixed Credit Reports
+                                li.list-item 
+                                    a(href="#") 
+                                        +icon("arrow") 
+                                        span Identity Theft
+                                li.list-item 
+                                    a(href="#") 
+                                        +icon("arrow") 
+                                        span Bankruptcy Reporting Errors
+                                li
+                                    p.fs-18.fw-semi Innacurate Background Checks
+                                li.list-item 
+                                    a(href="#") 
+                                        +icon("arrow") 
+                                        span Landlord Background Checks
+                                li.list-item 
+                                    a(href="#") 
+                                        +icon("arrow") 
+                                        span Employer Background Checks
+                            ul.list.w-33 
+                                li
+                                    p.fs-18.fw-semi Debt Collection Harassment and Abuse
+                                li.list-item 
+                                    a(href="#") 
+                                        +icon("arrow") 
+                                        span Unlawful Debt Collection / Harassment
+                                li.list-item 
+                                    a(href="#") 
+                                        +icon("arrow") 
+                                        span Mortgage Servicing Abuse
+                                li.list-item 
+                                    a(href="#") 
+                                        +icon("arrow") 
+                                        span Debt Relief and Negotiation
+                                li
+                                    p.fs-18.fw-semi Telemarketer Harassment
+
+                                li.list-item 
+                                    a(href="#") 
+                                        +icon("arrow") 
+                                        span Robo-calls and Autodialers
+                                li.list-item 
+                                    a(href="#") 
+                                        +icon("arrow") 
+                                        span Spam Text and Junk Fax
+                            ul.list.w-33 
+                                li
+                                    p.fs-18.fw-semi Bankruptcy
+                                li.list-item 
+                                    a(href="#") 
+                                        +icon("arrow") 
+                                        span Chapter 7
+                                li.list-item 
+                                    a(href="#") 
+                                        +icon("arrow") 
+                                        span Chapter 13
+                                li
+                                    p.fs-18.fw-semi Data Breach Litigation
+                                li
+                                    p.fs-18.fw-semi Class Actions
+                                li
+                                    p.fs-18.fw-semi Americans with Disabilities Act
+                                li
+                                    p.fs-18.fw-semi Personal Injury
+                li.menu-item
+                    a.menu-link(href="#") Articles and Reviews
+                    .dropdown.right-mob(class = active ? 'active' : '')
                         .dropdown-container.justify-content-between.flex-wrap
                             ul.list 
                                 li
