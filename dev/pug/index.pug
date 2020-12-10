@@ -15,7 +15,7 @@ block content
 					img.icon-check(src="img/tick.svg", alt="tick")
 				p.fs-18.c-white.max-300 Are a group of wise and knowledgeable attorneys that help a consumer resolve credit report problems
 				a.btn.btn-2(href="#") free consultation
-			img.offer__right(src="img/layer_34_5701.png", alt="img")
+			.offer__right
 	.container
 		section.about
 			h2.title About Us
@@ -24,37 +24,59 @@ block content
 		section.practice
 			h2.title Practice Areas
 			.slider.slider-practice
-				.practice-item 
-					img(src="img/practice/serv_shield.svg", alt="icon")
-					h3.fs-18.fw-semi.text-center Data <br> Protection
-					p.text-center Odio saperet electram duo at, suas commodo molestie ei mea, te pri fabellas accusamus definitiones.
-				.practice-item 
-					img(src="img/practice/serv_money.svg", alt="icon")
-					h3.fs-18.fw-semi.text-center Tracker Mortgage <br> Overcharging 
-					p.text-center Erat scripta argumentum ad vel. Corpora expetenda eloquentiam ne per. Usu ex volumus interesset intellegebat.
-				
-				.practice-item 
-					img(src="img/practice/serv_man.svg", alt="icon")
-					h3.fs-18.fw-semi.text-center Personal <br> Injury
-					p.text-center Quas volumus et pri, ex has nostrud mnesarchum, no has laboramus sententiae repudiandae. Augue maluisse.
-				.practice-item 
-					img(src="img/practice/search_diploma.svg", alt="icon")
-					h3.fs-18.fw-semi.text-center Probate
-					p.text-center His eu utinam integre. Iudico invidunt at mel, ne habeo antiopam eum. Duo te assum putent nonumes, possit.
-				.practice-item 
-					img(src="img/practice/serv_help.svg", alt="icon")
-					h3.fs-18.fw-semi.text-center Public <br> Inquiries
-					p.text-center Doming graeco disputando ea usu, an nec sapientem scriptorem theophrastus. Dolorem democritum id est.
-				
-				.practice-item 
-					img(src="img/practice/serv_shield.svg", alt="icon")
-					h3.fs-18.fw-semi.text-center Data <br> Protection
-					p.text-center Odio saperet electram duo at, suas commodo molestie ei mea, te pri fabellas accusamus definitiones.
-				.practice-item 
-					img(src="img/practice/serv_money.svg", alt="icon")
-					h3.fs-18.fw-semi.text-center Tracker Mortgage <br> Overcharging 
-					p.text-center Erat scripta argumentum ad vel. Corpora expetenda eloquentiam ne per. Usu ex volumus interesset intellegebat.
-				
+				- 
+					practice = [
+						{
+							src: 'serv_shield.svg',
+							titleTop: 'Data',
+							titleBottom: 'Protection',
+							text: 'Odio saperet electram duo at, suas commodo molestie ei mea, te pri fabellas accusamus definitiones.'
+						},
+						{
+							src: 'serv_money.svg',
+							titleTop: 'Tracker Mortgage',
+							titleBottom: 'Overcharging',
+							text: 'Erat scripta argumentum ad vel. Corpora expetenda eloquentiam ne per. Usu ex volumus interesset intellegebat.'
+						},
+						{
+							src: 'serv_man.svg',
+							titleTop: 'Personal',
+							titleBottom: 'Injury',
+							text: 'Quas volumus et pri, ex has nostrud mnesarchum, no has laboramus sententiae repudiandae. Augue maluisse.'
+						},
+						{
+							src: 'search_diploma.svg',
+							titleTop: 'Probate',
+							titleBottom: '',
+							text: 'His eu utinam integre. Iudico invidunt at mel, ne habeo antiopam eum. Duo te assum putent nonumes, possit.'
+						},
+						{
+							src: 'serv_help.svg',
+							titleTop: 'Public',
+							titleBottom: 'Inquiries',
+							text: 'Doming graeco disputando ea usu, an nec sapientem scriptorem theophrastus. Dolorem democritum id est.'
+						},
+						{
+							src: 'serv_shield.svg',
+							titleTop: 'Data',
+							titleBottom: 'Protection',
+							text: 'Odio saperet electram duo at, suas commodo molestie ei mea, te pri fabellas accusamus definitiones.'
+						},
+						{
+							src: 'serv_money.svg',
+							titleTop: 'Tracker Mortgage',
+							titleBottom: 'Overcharging',
+							text: 'Erat scripta argumentum ad vel. Corpora expetenda eloquentiam ne per. Usu ex volumus interesset intellegebat.'
+						},
+					]
+				each val in practice
+					.practice-item 
+						img(src="img/practice/"+val.src, alt="icon")
+						h3.fs-18.fw-semi.text-center
+							=val.titleTop 
+							br 
+							=val.titleBottom
+						p.text-center=val.text
 			.paginate
 				button.btn-arrow.btn-prev(type="button" data-index="1")
 					+icon("arrow")
@@ -67,15 +89,10 @@ block content
 		.container 
 			h2.title our Partner
 			ul.tabs
-				li.tab.active Edward Y. Kroub
-				li.tab Daniel C. Cohen
-				li.tab Yosef Steinmetz
-				li.tab Edward Y. Kroub
-				li.tab Moshe O. Boroosan
-				li.tab Shlomit Buchinsky
-				li.tab Joseph H. Mizrahi
-			ul.partner-content
-				li.partner-item.active 
+				each val, i in ['Edward Y. Kroub', 'Daniel C. Cohen', 'Yosef Steinmetz', 'Edward Y. Kroub', 'Moshe O. Boroosan', 'Shlomit Buchinsky', 'Joseph H. Mizrahi']
+					li.tab(class=(i == 0 ? 'active': ''))=val
+			.partner-content
+				.partner-item.active 
 					.justify-content-between.w-100
 						.partner-avatar 
 							img.partner-img(src="img/daniel-cohen-lawyer.jpg", alt="img")
@@ -114,49 +131,48 @@ block content
 		.container
 			h2.title.c-white What our clients say
 			.slider.slider-review
-				.review-item
-					.review-avatar 
-						img(src="img/avatar.png", alt="avatar")
-					.review-head
-						p.fs-18.c-white.fw-bold Steven Forest
-						p.c-white-light Product manager
-					p.c-white.text-center Sed iusto dicunt officiis ei, ei qui labore aliquando. Vis in elitr appareat, ea hinc semper singulis eos. Ei eum quodsi accumsan, nostro appetere praesent cum id. Ne pericula adolescens mea. Qui an tollit bonorum voluptatum, ad quo...
-						+icon("quote")
-				.review-item
-					.review-avatar 
-						img(src="img/avatar.png", alt="avatar")
-					.review-head
-						p.fs-18.c-white.fw-bold Steven Forest
-						p.c-white-light Product manager
-					p.c-white.text-center Sed iusto dicunt officiis ei, ei qui labore aliquando. Vis in elitr appareat, ea hinc semper singulis eos. Ei eum quodsi accumsan, nostro appetere praesent cum id. Ne pericula adolescens mea. Qui an tollit bonorum voluptatum, ad quo...
-						+icon("quote")
-
-				.review-item
-					.review-avatar 
-						img(src="img/avatar.png", alt="avatar")
-					.review-head
-						p.fs-18.c-white.fw-bold Steven Forest
-						p.c-white-light Product manager
-					p.c-white.text-center Odio sumo esse no nam, cu sit unum doming democritum, id simul dictas vituperatoribus sit. Incorrupte constituam ad sit, mei ex commune inciderint, sed te iracundia interesset. Tollit putent alterum id has. Nibh placerat duo no, elit.
-						+icon("quote")
-
-				.review-item
-					.review-avatar 
-						img(src="img/avatar.png", alt="avatar")
-					.review-head
-						p.fs-18.c-white.fw-bold Steven Forest
-						p.c-white-light Product manager
-					p.c-white.text-center Sed iusto dicunt officiis ei, ei qui labore aliquando. Vis in elitr appareat, ea hinc semper singulis eos. Ei eum quodsi accumsan, nostro appetere praesent cum id. Ne pericula adolescens mea. Qui an tollit bonorum voluptatum, ad quo...
-						+icon("quote")
-
-				.review-item
-					.review-avatar 
-						img(src="img/avatar.png", alt="avatar")
-					.review-head
-						p.fs-18.c-white.fw-bold Steven Forest
-						p.c-white-light Product manager
-					p.c-white.text-center Ctation nostrum consequat ne sed, sit aeterno accusamus eu. Aeque copiosae ei nam, his sint molestiae concludaturque an, vix lorem bonorum laoreet ea. Tollit putent alterum id has. Nibh placerat duo no, elit.
-						+icon("quote")
+				- 
+					review = [
+						{
+							avatar: 'avatar.png',
+							name: 'Steven Forest',
+							position: 'Product manager',
+							text: 'Sed iusto dicunt officiis ei, ei qui labore aliquando. Vis in elitr appareat, ea hinc semper singulis eos. Ei eum quodsi accumsan, nostro appetere praesent cum id. Ne pericula adolescens mea. Qui an tollit bonorum voluptatum, ad quo...',
+						},
+						{
+							avatar: 'avatar.png',
+							name: 'Steven Forest',
+							position: 'Product manager',
+							text: 'Sed iusto dicunt officiis ei, ei qui labore aliquando. Vis in elitr appareat, ea hinc semper singulis eos. Ei eum quodsi accumsan, nostro appetere praesent cum id. Ne pericula adolescens mea. Qui an tollit bonorum voluptatum, ad quo...',
+						},
+						{
+							avatar: 'avatar.png',
+							name: 'Steven Forest',
+							position: 'Product manager',
+							text: ' Odio sumo esse no nam, cu sit unum doming democritum, id simul dictas vituperatoribus sit. Incorrupte constituam ad sit, mei ex commune inciderint, sed te iracundia interesset. Tollit putent alterum id has. Nibh placerat duo no, elit.'
+						},
+						{
+							avatar: 'avatar.png',
+							name: 'Steven Forest',
+							position: 'Product manager',
+							text: 'Sed iusto dicunt officiis ei, ei qui labore aliquando. Vis in elitr appareat, ea hinc semper singulis eos. Ei eum quodsi accumsan, nostro appetere praesent cum id. Ne pericula adolescens mea. Qui an tollit bonorum voluptatum, ad quo...',
+						},
+						{
+							avatar: 'avatar.png',
+							name: 'Steven Forest',
+							position: 'Product manager',
+							text: 'Ctation nostrum consequat ne sed, sit aeterno accusamus eu. Aeque copiosae ei nam, his sint molestiae concludaturque an, vix lorem bonorum laoreet ea. Tollit putent alterum id has. Nibh placerat duo no, elit.',
+						},
+					]
+				each val in review
+					.review-item
+						.review-avatar 
+							img(src="img/"+val.avatar, alt="avatar")
+						.review-head
+							p.fs-18.c-white.fw-bold=val.name 
+							p.c-white-light=val.position 
+						p.c-white.text-center=val.text
+							+icon("quote")
 
 			.paginate
 				button.btn-arrow.btn-prev(type="button" data-index="2")
@@ -293,17 +309,4 @@ block content
 						+icon("message")
 						div
 							p.fs-18.fw-semi Email Address
-							p info@consumerattorneys.com
-
-
-
-
-
-					
-
-
-
-					
-
-
-			
+							p info@consumerattorneys.com		

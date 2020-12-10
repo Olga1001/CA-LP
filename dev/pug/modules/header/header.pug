@@ -3,13 +3,14 @@
 header.header 
     .container
         .flex-center-between
-            button.burger(type="button")
-                span.burger-line.burger-top
-                span.burger-line.burger-center
-                span.burger-line.burger-bottom
-            a.logo.align-items-center(href="#")
-                img.logo__img-icon(src="img/logo/icon.svg", alt="logo")
-                img.logo__img(src="img/logo/logo_100x30.svg", alt="logo")
+            .d-flex.align-items-center
+                button.burger(type="button")
+                    span.burger-line.burger-top
+                    span.burger-line.burger-center
+                    span.burger-line.burger-bottom
+                a.logo.align-items-center(href="#")
+                    img.logo__img-icon(src="img/logo/icon.svg", alt="logo")
+                    img.logo__img(src="img/logo/logo_100x30.svg", alt="logo")
             ul.menu
                 li.menu-item
                     a.menu-link(href="#") About Us
@@ -198,6 +199,14 @@ header.header
             .align-items-center 
                 a.search(href="#")
                     +icon("search")
-                button.btn.bg-green.hide-lg(type="button") INTAKE FORM
+                a.btn-phone(href="tel:8006040466")
+                    .btn-phone_icon
+                        img(src="img/phone_call.png", alt="phone call")
+                    div 
+                        p.fs-10.fw-semi.c-white FREE 
+                            br.d-llg-none.d-block
+                            |CASE CONSULTATION
+                        p.fs-18.fw-bold.c-white 800-604-0466
+                //- button.btn.bg-green.hide-lg(type="button") INTAKE FORM
 
        

@@ -1,0 +1,70 @@
+extends layout/main
+
+block variables
+	-var title = 'Upload Letter'
+	-var social = false
+
+block content
+	main.upload-letter
+		h2.title.text-initial Upload Letter
+		.box
+			p.text-center.fs-18.fw-medium Consumer Attorneys LLP litigates class-actions and individual actions against debt collectors under the Fair Debt Collection Practices Act (“FDCPA”). It is quite common for debt collectors to violate the FDCPA by including false, misleading, harassing or confusing language in collection letters. If you received a collection letter or any other written communication from a debt collector, please fill out the entire form below and upload the collection letter or other communication using the link provided. An attorney will review the communication and contact you to discuss next steps in the event further action can be taken.
+		
+		form.form.upload-letter__form.pt-90
+			.flex-wrap
+				label.half-50 
+					input(type="text" placeholder="Affiliate Name")
+					span.error-message error
+				label.half-50 
+					input(type="email" placeholder="Email (for updates on the status)")
+					span.error-message error
+			.flex-wrap
+				label.half-50 
+					input(type="text" placeholder="Phone Number (Optional)")
+					span.error-message error
+				label.half-50 
+					.select
+						select
+							option(value="State") State
+			.flex-wrap
+				label.half-50 
+					input(type="text" placeholder="Client First Name")
+					span.error-message error
+				label.half-50 
+					input(type="email" placeholder="Client Last Name;")
+					span.error-message error
+			.flex-wrap
+				label.half-50 
+					input(type="text" placeholder="Debt Collector")
+					span.error-message error
+				label.half-50 
+					input(type="email" placeholder="Original Creditor")
+					span.error-message error
+			.flex-wrap
+				label.half-50 
+					span.mb-20.d-block Date of Letter
+					input.input-calendar(type="date")
+					span.error-message error
+				label.half-50 
+					span.mb-20.d-block Letter to upload (png, jpg or pdf)
+					input.d-none(type="file")
+					span.btn-file No file chosen
+					span.error-message error
+			label
+				textarea(cols="30", rows="5" placeholder="Comments Section (Optional)")
+
+			p.fs-14.mb-30 By submitting you agree to our Terms & Privacy Policy
+			button.btn(type="submit") SUBMIT
+
+
+
+
+
+					
+
+
+
+					
+
+
+			
